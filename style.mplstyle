@@ -1,0 +1,10 @@
+# Set color cycle: blue, green, yellow, red, violet, gray
+axes.prop_cycle : cycler('color', ['233D4D', 'FE7F2D', 'FCCA46', 'A1C181', '619B81'])
+
+# Always save as 'tight'
+savefig.bbox : tight
+
+# Use serif fonts
+font.serif : Times New Roman
+font.family : serif
+mathtext.fontset : dejavuserif

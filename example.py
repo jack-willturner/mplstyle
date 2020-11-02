@@ -1,3 +1,10 @@
+import matplotlib
+from shutil import copyfile
+
+dir = matplotlib.get_configdir()
+copyfile('style.mplstyle', dir+'/stylelib/thesis.mplstyle')
+
+import matplotlib
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -126,7 +133,7 @@ if __name__ == "__main__":
     # Setup a list of all available styles, in alphabetical order but
     # the `default` and `classic` ones, which will be forced resp. in
     # first and second position.
-    style_list = ['default', 'seaborn-whitegrid', 'personal']
+    style_list = ['default', 'thesis']
 
     # Plot a demonstration figure for every available style sheet.
     for style_label in style_list:
